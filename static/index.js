@@ -150,7 +150,7 @@ async function getData() {
   out.forEach((val) => {
     console.log(val);
     container.innerHTML = `<div style="display : flex">
-  <h3>${val.phoneNumber}</h3>
+  <h3>${val.phonenumber}</h3>
   <h3>${val.email}</h3>
   </div>`;
   });
