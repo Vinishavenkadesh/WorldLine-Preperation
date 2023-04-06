@@ -121,19 +121,19 @@ function setSuccess(element) {
 
 async function postData() {
   const data = {
-    firstname : firstname.value,
-    lastname : lastname.value,
+    // firstname : firstname.value,
+    // lastname : lastname.value,
     email: email.value,
     phoneNumber: phoneNumber.value,
-    dob : dob.value,
-    address1 : address1.value,
-    address2 : address2.value,
-    gender : gender.value,
-    nationality : nationality.value,
-    district : district.value,
-    state : state.value,
-    country : country.value,
-    zipcode : zipcode.value
+    // dob : dob.value,
+    // address1 : address1.value,
+    // address2 : address2.value,
+    // gender : gender.value,
+    // nationality : nationality.value,
+    // district : district.value,
+    // state : state.value,
+    // country : country.value,
+    // zipcode : zipcode.value
   };
 
   await axios
