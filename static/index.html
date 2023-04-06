@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>forms</title>
+</head>
+<body>
+    <form action="" id="form">
+        <h1>Registration Form</h1>
+        <div class = "display">
+        <div>
+        <div class="input-group">
+            <label for="firstname">Firstname : </label>
+            <input type="text" id="firstname">
+            <div class="error"></div>
+         </div>
+         <div class="input-group">
+            <label for="lastname">Lastname : </label>
+            <input type="text" id="lastname">
+            <div class="error"></div>
+         </div>
+        <div class="input-group">
+           <label for="email">Email : </label>
+           <input type="text" id="email">
+           <div class="error"></div>
+        </div>
+        <div class="input-group">
+            <label for="phoneNumber">Phone Number : </label>
+            <input type="number" id="phoneNumber">
+            <div class="error"></div>
+         </div>
+         <div class="input-group">
+            <label for="dob">Date Of Birth : </label>
+            <input type="date" id="dob">
+            <div class="error"></div>
+         </div>
+         <div class="input-group">
+            <label for="addressLine1">AddressLine 1 : </label>
+            <input type="text" id="addressLine1">
+            <div class="error"></div>
+         </div>
+        </div>
+        <div>
+         <div class="input-group">
+            <label for="addressLine2">Address Line 2 : </label>
+            <input type="text" id="addressLine2">
+            <div class="error"></div>
+         </div>
+         <div class="input-group">
+            <label for="gender">Gender</label>
+         <select id="gender">
+            <option value="">----SELECT-----</option>
+            <option value="">Male</option>
+            <option value="">Female</option>
+            <option value="">Other</option>
+         </select>
+        </div>
+         <div class="input-group">
+            <label for="nationality">Nationality : </label>
+            <input type="text" id="nationality">
+            <div class="error"></div>
+         </div>
+         <div class="input-group">
+            <label for="district">District : </label>
+            <input type="text" id="distict">
+            <div class="error"></div>
+        <div class="input-group">
+            <label for="state">State : </label>
+            <input type="text" id="state">
+            <div class="error">
+        </div>
+        <div class="input-group">
+            <label for="country">Country : </label>
+            <input type="text" id="Country">
+            <div class="error">
+        </div>
+        <div class="input-group">
+            <label for="zipcode">ZipCode : </label>
+            <input type="text" id="zipcode">
+            <div class="error">
+        </div>
+    </div>
+</div>
+        </div>
+         <button class="submit">SUBMIT</button>
+         <div id="container"></div>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.5/axios.min.js" integrity="sha512-nnNHpffPSgINrsR8ZAIgFUIMexORL5tPwsfktOTxVYSv+AUAILuFYWES8IHl+hhIhpFGlKvWFiz9ZEusrPcSBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

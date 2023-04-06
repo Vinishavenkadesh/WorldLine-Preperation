@@ -1,0 +1,49 @@
+*{
+    background-color: blanchedalmond;
+}
+.input-group{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-group input{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.input-group input:focus{
+    outline: none;
+    border-color: blueviolet;
+}
+
+.input-group .error{
+    color: red;
+}
+
+.error input{
+    border-color: rgb(192, 34, 34);
+}
+
+.success input{
+    border-color: green;
+}
+
+.submit{
+    margin-top: 15px;
+    padding: 10px 15px;
+}
+
+#form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
