@@ -13,9 +13,6 @@ const state = document.getElementById("state");
 const country = document.getElementById("country");
 const zipcode = document.getElementById("zipcode");
 
-
-
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (validityform()) {
@@ -25,56 +22,56 @@ form.addEventListener("submit", (e) => {
 });
 
 function validityform() {
-// const firstnameval = firstname.value.trim();
-// const lastnameval = lastname.value.trim();
-// const dobval = dob.value.trim();
-// const address1val = address1.value.trim();
-// const address2val = address2.value.trim();
-// const genderval = gender.value.trim();
-// const nationalityval = nationality.value.trim();
-// const stateval = state.value.trim();
-// // const countryval = country.value.trim();
-// const zipcodeval = zipcode.value.trim();
+  // const firstnameval = firstname.value.trim();
+  // const lastnameval = lastname.value.trim();
+  // const dobval = dob.value.trim();
+  // const address1val = address1.value.trim();
+  // const address2val = address2.value.trim();
+  // const genderval = gender.value.trim();
+  // const nationalityval = nationality.value.trim();
+  // const stateval = state.value.trim();
+  // // const countryval = country.value.trim();
+  // const zipcodeval = zipcode.value.trim();
   const emailval = email.value.trim();
   const phoneNumberval = phoneNumber.value.trim();
   let success = true;
 
-//   if(firstnameval === ""){
-//     setError(firstname, "*FirstName is required");
-//     success = false;
-//   }
-//   if(lastnameval === ""){
-//     setError(firstname, "LastName is required");
-//     success = false;
-//   }
-//   if(address1val === ""){
-//     setError(address1, "Address is required");
-//     success = false;
-//   }
-//   if(nationalityval === ""){
-//     setError(nationality, "Nationality is required");
-//     success = false;
-//   }
-//   if(countryval === ""){
-//     setError(country, "Country is required");
-//     success = false;
-//   }
-//   if(districtval === ""){
-//     setError(district, "District is required");
-//     success = false;
-//   }
-//   if(stateval === ""){
-//     setError(state, "State is required");
-//     success = false;
-//   }
-//   if(zipcodeval === ""){
-//     setError(zipcode, "ZipCode is required");
-//     success = false;
-//   }
-//   else if (zipcodeval.length != 6) {
-//     setError(zipcode, "*ZipCode should contain 6 digits");
-//     success = false;
-//   }
+  //   if(firstnameval === ""){
+  //     setError(firstname, "*FirstName is required");
+  //     success = false;
+  //   }
+  //   if(lastnameval === ""){
+  //     setError(firstname, "LastName is required");
+  //     success = false;
+  //   }
+  //   if(address1val === ""){
+  //     setError(address1, "Address is required");
+  //     success = false;
+  //   }
+  //   if(nationalityval === ""){
+  //     setError(nationality, "Nationality is required");
+  //     success = false;
+  //   }
+  //   if(countryval === ""){
+  //     setError(country, "Country is required");
+  //     success = false;
+  //   }
+  //   if(districtval === ""){
+  //     setError(district, "District is required");
+  //     success = false;
+  //   }
+  //   if(stateval === ""){
+  //     setError(state, "State is required");
+  //     success = false;
+  //   }
+  //   if(zipcodeval === ""){
+  //     setError(zipcode, "ZipCode is required");
+  //     success = false;
+  //   }
+  //   else if (zipcodeval.length != 6) {
+  //     setError(zipcode, "*ZipCode should contain 6 digits");
+  //     success = false;
+  //   }
 
   if (emailval === "") {
     setError(email, "*EmailId is required");
@@ -149,7 +146,7 @@ async function getData() {
 
   out.forEach((val) => {
     console.log(val);
-    container.innerHTML = `<div style="display : flex">
+    container.innerHTML += `<div style="display : flex">
   <h3>${val.phonenumber}</h3>
   <h3>${val.email}</h3>
   </div>`;
