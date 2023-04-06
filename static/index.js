@@ -137,13 +137,13 @@ async function postData() {
   };
 
   await axios
-    .post("http://localhost:3000/postData", data)
+    .post("http://16.170.222.108:3000/postData", data)
     .then((res) => console.log(res.data));
 }
 async function getData() {
   const container = document.querySelector("#container");
   const out = await axios
-    .get("http://localhost:3000/getData")
+    .get("http://16.170.222.108:3000/getData")
     .then((res) => res.data);
   console.log(out);
 
